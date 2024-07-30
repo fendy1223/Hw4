@@ -30,12 +30,14 @@ a {
 .h2 {
   font-size: 48px;
   font-weight: bold;
-  text-align: center;
 }
 
 .h3 {
   font-size: 24px;
   font-weight: bold;
+}
+
+.text-align-c {
   text-align: center;
 }
 
@@ -75,6 +77,10 @@ a {
   align-items: center;
 }
 
+.f-wrap {
+  flex-wrap: wrap;
+}
+
 .row {
   margin: 0 -12px;
 }
@@ -83,12 +89,20 @@ a {
   border-bottom: 1px solid white;
 }
 
+.h-100 {
+  height: 100%;
+}
+
 .pd-4 {
   padding: 16px;
 }
 
 .pt-3 {
   padding-top: 12px;
+}
+
+.pt-4 {
+  padding-top: 16px;
 }
 
 .pt-8 {
@@ -103,8 +117,16 @@ a {
   padding-top: 80px;
 }
 
+.pt-24 {
+  padding-top: 96px;
+}
+
 .pb-3 {
   padding-bottom: 12px;
+}
+
+.pb-4 {
+  padding-bottom: 16px;
 }
 
 .pb-5 {
@@ -113,6 +135,10 @@ a {
 
 .pb-8 {
   padding-bottom: 32px;
+}
+
+.pb-12 {
+  padding-bottom: 48px;
 }
 
 .pb-20 {
@@ -159,13 +185,13 @@ a {
   margin-bottom: 48px;
 }
 
+.mb-20 {
+  margin-bottom: 80px;
+}
+
 @media (max-width: 992px) {
   .container {
     padding: 0 36px;
-  }
-
-  .f-wrap {
-    flex-wrap: wrap;
   }
 
   .row {
