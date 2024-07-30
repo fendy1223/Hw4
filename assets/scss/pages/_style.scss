@@ -1,0 +1,202 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* outline: 1px solid; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+body {
+  font-family: Roboto, "Noto Sans TC", serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.color-1 {
+  color: #650300;
+}
+
+.color-2 {
+  color: #aa0601;
+}
+
+.color-3 {
+  color: white;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.row {
+  margin: 0 -12px;
+}
+
+.border-b-1 {
+  border-bottom: 1px solid white;
+}
+
+.pd-4 {
+  padding: 16px;
+}
+
+.pt-3 {
+  padding-top: 12px;
+}
+
+.pt-8 {
+  padding-top: 32px;
+}
+
+.pt-15 {
+  padding-top: 60px;
+}
+
+.pt-20 {
+  padding-top: 80px;
+}
+
+.pb-3 {
+  padding-bottom: 12px;
+}
+
+.pb-5 {
+  padding-bottom: 32px;
+}
+
+.pb-8 {
+  padding-bottom: 32px;
+}
+
+.pb-20 {
+  padding-bottom: 80px;
+}
+
+.mr-6 {
+  margin-right: 24px;
+}
+
+.mr-8 {
+  margin-right: 32px;
+}
+
+.mr-12 {
+  padding-right: 48px;
+}
+
+.mr-16 {
+  margin-right: 64px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.mb-8 {
+  margin-bottom: 32px;
+}
+
+.mb-9 {
+  margin-bottom: 36px;
+}
+
+.mb-12 {
+  margin-bottom: 48px;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 36px;
+  }
+
+  .f-wrap {
+    flex-wrap: wrap;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  .column {
+    margin-bottom: 24px;
+  }
+
+  .mr-md-4 {
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+
+  .d-none {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .h2 {
+    font-size: 24px;
+  }
+}
