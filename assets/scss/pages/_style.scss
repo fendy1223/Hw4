@@ -65,7 +65,11 @@ a {
   display: flex;
 }
 
-.jc-sb {
+.jc-center {
+  justify-content: center;
+}
+
+.jc-space-between {
   justify-content: space-between;
 }
 
@@ -73,7 +77,7 @@ a {
   justify-content: flex-end;
 }
 
-.ai-c {
+.ai-center {
   align-items: center;
 }
 
@@ -194,7 +198,7 @@ a {
     padding: 0 36px;
   }
 
-  .row {
+  .row-jc-c {
     justify-content: center;
   }
 
