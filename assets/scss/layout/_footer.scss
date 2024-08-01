@@ -27,6 +27,7 @@
     color: white;
     &:hover {
       color: #e7c3c3;
+      text-decoration: underline;
     }
   }
 }
@@ -41,6 +42,10 @@
 .footer-contect {
   font-size: 36px;
   color: white;
+  &:hover {
+    font-size: 36px;
+    color: #ced4da;
+  }
 }
 
 .footer-link-link a {
@@ -48,6 +53,7 @@
   font-size: 14px;
   &:hover {
     color: #e7c3c3;
+    text-decoration: underline;
   }
 }
 

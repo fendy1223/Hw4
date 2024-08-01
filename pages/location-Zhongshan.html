@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>眼鏡官網-門市據點-中山</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section>
+      <div class="container page">
+        <h2 class="h2 page-title">門市據點</h2>
+        <div class="location-store">
+          <label for="store" class="store">選擇分店</label>
+          <select name="store" id="store" class="store-select">
+            <option value="all" selected="">全部</option>
+            <option value="taipei1">台北中山旗艦店</option>
+            <option value="taipei2">台北綠園店</option>
+            <option value="taichung">台中清水旗艦店</option>
+            <option value="kaoshiung1">高雄中正形象店</option>
+            <option value="kaoshiung2">高雄夢時代店</option>
+          </select>
+        </div>
+        <div class="d-flex jc-space-between f-wrap row">
+          <ol class="d-flex f-wrap location-place">
+            <li class="location-place-box">
+              <img
+                class="w-md-49 w-sm-100"
+                src="../assets/images/storepage-1.png"
+                alt="台北中山旗艦店"
+              />
+              <div class="w-md-49 w-sm-100">
+                <h2 class="location-card-title">台北中山旗艦店</h2>
+                <ul class="pt-4 pb-4 location-card-box">
+                  <li class="d-flex location-card-info mb-2">
+                    <span class="material-symbols-outlined"> call </span>
+                    <p>電話：(02)000-1234</p>
+                  </li>
+                  <li class="d-flex location-card-info mb-2">
+                    <span class="material-symbols-outlined"> schedule </span>
+                    <p>營業時間：10:00-21:00</p>
+                  </li>
+                  <li class="d-flex location-card-info">
+                    <span class="material-symbols-outlined"> location_on </span>
+                    <p>地址：台北市中山區南京東路 25 巷 2-1 號</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+          <div class="map">
+            <img src="../assets/images/map.png" alt="map" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

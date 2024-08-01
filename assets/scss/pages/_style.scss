@@ -37,6 +37,22 @@ a {
   font-weight: bold;
 }
 
+.h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.page {
+  margin-top: 96px;
+  margin-bottom: 80px;
+}
+
+.page-title {
+  border-left: 8px solid #9f1213;
+  padding-left: 16px;
+  margin-bottom: 32px;
+}
+
 .text-align-c {
   text-align: center;
 }
@@ -79,6 +95,10 @@ a {
 
 .ai-center {
   align-items: center;
+}
+
+.f-direction {
+  flex-direction: column;
 }
 
 .f-wrap {
@@ -202,12 +222,20 @@ a {
     justify-content: center;
   }
 
-  .column {
+  .mb-md-6 {
     margin-bottom: 24px;
   }
 
   .mr-md-4 {
     margin-right: 16px;
+  }
+
+  .w-md-49 {
+    width: 49%;
+  }
+
+  .page {
+    margin-top: 80px;
   }
 }
 
@@ -223,10 +251,26 @@ a {
   .d-none {
     display: none;
   }
+
+  .page {
+    margin-top: 80px;
+  }
 }
 
 @media (max-width: 576px) {
   .h2 {
     font-size: 24px;
+  }
+
+  .page {
+    margin-top: 40px;
+    margin-bottom: 64px;
+    &-title {
+      margin-bottom: 24px;
+    }
+  }
+
+  .mb-sm-6 {
+    margin-bottom: 24px;
   }
 }
