@@ -1,6 +1,12 @@
 .footer {
   background: #aa0601;
-  padding: 80px 0;
+  padding: 48px 0 32px 0;
+  @include pad {
+    padding: 48px 0 40px 0;
+  }
+  @include mobile {
+    padding: 24px 0 24px 0;
+  }
   &-content {
     display: flex;
     justify-content: space-between;
@@ -14,11 +20,17 @@
     font-size: 36px;
     padding: 6px;
     margin-right: 22px;
+    @include pad {
+      font-size: 16px;
+    }
   }
 }
 
 .footer-img img {
   width: 48px;
+  @include mobile {
+    width: 24px;
+  }
   &:hover {
     border: 1px solid #dae63c;
     border-radius: 4px;
@@ -42,6 +54,9 @@
 .footer-contect {
   font-size: 36px;
   color: white;
+  @include pad {
+    font-size: 16px;
+  }
   &:hover {
     font-size: 36px;
     color: #ced4da;
@@ -51,38 +66,23 @@
 .footer-link-link a {
   color: white;
   font-size: 14px;
+  @include mobile {
+    flex-direction: column;
+    display: flex;
+    a {
+      margin-bottom: 8px;
+    }
+  }
   &:hover {
     color: #e7c3c3;
     text-decoration: underline;
   }
 }
 
-@media (max-width: 767px) {
-  .footer span {
-    font-size: 16px;
-  }
-
-  .footer-contect {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 576px) {
-  .footer-img img {
-    width: 24px;
-  }
-
+@include mobile {
   .footer-bottom {
     flex-direction: column;
     p {
-      margin-bottom: 8px;
-    }
-  }
-
-  .footer-link-link {
-    flex-direction: column;
-    display: flex;
-    a {
       margin-bottom: 8px;
     }
   }

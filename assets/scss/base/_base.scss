@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* outline: 1px solid; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+body {
+  font-family: Roboto, "Noto Sans TC", serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+  @include desktop {
+    padding: 0 36px;
+  }
+  @include pad {
+    padding: 0 14px;
+  }
+}
+
+.h2 {
+  font-size: 48px;
+  font-weight: bold;
+  @include mobile {
+    font-size: 24px;
+  }
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.page {
+  margin-top: 96px;
+  margin-bottom: 80px;
+  @include desktop {
+    margin-top: 80px;
+  }
+  @include mobile {
+    margin-top: 40px;
+    margin-bottom: 64px;
+    &-title {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.page-title {
+  border-left: 8px solid #9f1213;
+  padding-left: 16px;
+  margin-bottom: 32px;
+}

@@ -4,6 +4,12 @@
   background-position: center;
   background-size: cover;
   height: 787px;
+  @include pad {
+    background-image: url("/assets/images/home-header-sm.png");
+  }
+  @include mobile {
+    height: 396px;
+  }
 }
 
 .home-text {
@@ -15,11 +21,20 @@
   p {
     font-size: 36px;
     color: #650300;
+    @include mobile {
+      font-size: 16px;
+    }
   }
   h2 {
     font-size: 64px;
     color: #650300;
     font-weight: bold;
+    @include pad {
+      font-size: 60px;
+    }
+    @include mobile {
+      font-size: 24px;
+    }
   }
   a {
     font-size: 20px;
@@ -44,6 +59,12 @@
   flex-direction: column;
   align-items: center;
   padding: 0 12px;
+  @include desktop {
+    width: 50%;
+  }
+  @include pad {
+    width: 100%;
+  }
   img {
     width: 84px;
     height: 84px;
@@ -55,6 +76,12 @@
   &-card {
     width: 33.3333%;
     padding: 0 12px;
+    @include desktop {
+      width: 51%;
+    }
+    @include pad {
+      width: 100%;
+    }
   }
 }
 
@@ -72,6 +99,12 @@
       background: #fff;
     }
   }
+  @include desktop {
+    height: 100%;
+    &-card {
+      width: 100%;
+    }
+  }
 }
 
 .customer {
@@ -79,6 +112,12 @@
   &-card {
     width: 25%;
     padding: 0 12px;
+    @include desktop {
+      width: 50%;
+    }
+    @include mobile {
+      width: 100%;
+    }
     &-text {
       height: 205px;
       border: 1px solid #dee2e6;
@@ -105,6 +144,9 @@
     justify-content: center;
     width: 636px;
     margin: 0 auto;
+    @include pad {
+      width: auto;
+    }
     p {
       font-size: 20px;
     }
@@ -115,12 +157,13 @@
     input {
       padding: 6px 12px;
       line-height: 1.5;
+      background: transparent;
+      border: 1px solid #000000;
+    }
+    textarea {
+      background: transparent;
     }
   }
-}
-
-.question input {
-  padding-bottom: 106px;
 }
 
 .submit {
@@ -132,71 +175,11 @@
   font-weight: bold;
   cursor: pointer;
   border: none;
+  @include desktop {
+    width: 336px;
+  }
   &:hover {
     color: #000000;
     background: #dae63c;
-  }
-}
-
-@media (max-width: 992px) {
-  .card {
-    width: 50%;
-  }
-
-  .glasses-card {
-    width: 51%;
-  }
-
-  .design-glasses {
-    height: 100%;
-    &-card {
-      width: 100%;
-    }
-  }
-
-  .customer-card {
-    width: 50%;
-  }
-
-  .submit {
-    width: 336px;
-  }
-}
-
-@media (max-width: 767px) {
-  .home-header {
-    background-image: url("/assets/images/home-header-sm.png");
-  }
-  .home-text h2 {
-    font-size: 60px;
-  }
-
-  .card {
-    width: 100%;
-  }
-
-  .glasses-card {
-    width: 100%;
-  }
-
-  .contect-us-card {
-    width: auto;
-  }
-}
-
-@media (max-width: 576px) {
-  .home-header {
-    height: 396px;
-  }
-  .customer-card {
-    width: 100%;
-  }
-
-  .home-text p {
-    font-size: 16px;
-  }
-
-  .home-text h2 {
-    font-size: 24px;
   }
 }
